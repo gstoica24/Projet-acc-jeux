@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
   *, html {
-
+    box-sizing: border-box;
     scroll-behavior: smooth !important;
 }
 
@@ -108,23 +108,19 @@ main{
     justify-content: center;
     width: 100%;
   }
-
-  /* .slide-top{
-
-    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-  }
-
   
-@keyframes slide-top {
-  0% {
-    transform: translateY(0);
-    transform: translateY(0);
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
   }
-  100% {
-    transform: translateY(-90px);
-    transform: translateY(-90px);
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
   }
-} */
+
 
 
   .illustration .preview{
