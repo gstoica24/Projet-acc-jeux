@@ -150,6 +150,7 @@ main{
     height: 70px;
     width: 200px;
     transition: transform 1s, box-shadow 0.8s;
+    border-radius: 10px;
   }
 
   section button a{
